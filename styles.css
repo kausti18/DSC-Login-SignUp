@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 
-
+* {
+	box-sizing: border-box;
+}
 body {
 	background: #f6f5f7;
 	display: flex;
@@ -40,6 +42,16 @@ a {
 	font-size: 14px;
 	text-decoration: none;
 	margin: 15px 0;
+
+  display:inline-block;
+
+  background:#f1f1f1;
+  margin:10px;
+  border-radius:30%;
+  box-shadow:0 5px 15px -5px #00000070;
+  color:#3498db;
+  overflow:hidden;
+  position:relative;
 }
 
 button {
@@ -88,9 +100,15 @@ input {
 }
 
 .container {
-
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
 	overflow: hidden;
-
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
 }
 
 .form-container {
@@ -241,4 +259,46 @@ footer i {
 footer a {
     color: #3c97bf;
     text-decoration: none;
+}
+a .fab {
+  line-height:90px;
+  font-size:26px;
+  transition:0.2s linear;
+}
+
+a:hover .fab {
+  transform:scale(1.3);
+  color:#f1f1f1;
+}
+
+a:before{
+  content:'';
+  position:absolute;
+  width:120%;
+  height:120%;
+  background:#3498db;
+  transform:rotate(45deg);
+  left:-110%;
+  top:90%;
+}
+
+a:hover::before{
+  animation:rotate 0.7s 1;
+  top:-10%;
+  left:-10%;
+}
+
+@keyframes rotate{
+  0%{
+    top:-110%;
+    left:90%;
+  }
+  50%{
+     top:10%;
+    left:-30%;
+  }
+  100%{
+    top:-10%;
+    left:-10%;
+  }
 }
