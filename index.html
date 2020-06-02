@@ -7,14 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale 1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen and (min-width: 769px)">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 768px)">
   <title>Login/SignUp</title>
 </head>
 
 <body>
-
+<div class="computer">
   <div class="container" id="container">
-  	<div class="form-container sign-up-container mobile1">
+  	<div class="form-container sign-up-container">
   		<form action="#">
   			<h1>Create Account</h1>
   			<div class="social-container">
@@ -29,7 +30,7 @@
   			<button>Sign Up</button>
   		</form>
   	</div>
-  	<div class="form-container sign-in-container mobile2">
+  	<div class="form-container sign-in-container ">
   		<form action="#">
   			<h1>Sign in</h1>
   			<div class="social-container">
@@ -37,11 +38,14 @@
   				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
   				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
   			</div>
-  			<span>or use your account</span>
-  			<input type="email" placeholder="Email" />
-  			<input type="password" placeholder="Password" />
-  			<a href="#">Forgot your password?</a>
-  			<button>Sign In</button>
+        <div class="login-details">
+          <span>or use your account</span>
+    			<input type="email" placeholder="Email" />
+    			<input type="password" placeholder="Password" />
+    			<a href="#">Forgot your password?</a>
+    			<button>Sign In</button>
+        </div>
+
   		</form>
   	</div>
   	<div class="overlay-container">
@@ -59,8 +63,30 @@
   		</div>
   	</div>
     	</div>
+      	</div>
+  <!--Code for Mobile Screen-->
+  <div class="mobile">
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Sign in</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="login-details">
+          <span>or use your account</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <div class="forgotPassword"><a href="#">Forgot your password?</a></div>
+          <button>Sign In</button>
+          <p>New Here? <a href="signUp.html">Click</a>here register yourself!</p>
+        </div>
 
+      </form>
+    </div>
 
+</div>
 
   <script src="app.js"></script>
 </body>
