@@ -40,7 +40,7 @@ a {
 
   background:#f1f1f1;
   margin:10px;
-  border-radius:30%;
+
   box-shadow:0 5px 15px -5px #00000070;
   color:#3498db;
   overflow:hidden;
@@ -64,7 +64,16 @@ button {
 }
 .forgotPassword{
   position: relative;
-  left: 100px;
+  left: 80px;
+
+}
+.forgotPassword a{
+	border-radius: 10%;
+}
+
+.clickhere{
+	position: relative;
+	top: 10px;
 }
 button:focus {
 	outline: none;
