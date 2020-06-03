@@ -2,8 +2,6 @@
 .computer {
 	display: none;
 }
-
-/* Styles for whole web page */
 * {
   box-sizing: border-box;
 }
@@ -11,7 +9,14 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', Helvetica, Sans-serif;
+	text-align: center;
 }
+@media (max-width: 1024px){
+
+
+
+/* Styles for whole web page */
+
 .clearfix::after {
 	content: "";
 	clear: both;
@@ -137,4 +142,5 @@ a:hover::before{
   animation:rotate 0.7s 1;
   top:-10%;
   left:-10%;
+}
 }
