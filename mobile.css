@@ -123,8 +123,8 @@ input {
 	justify-content: center;
 	align-items: center;
 	margin: 0 5px;
-	height: 40px;
-	width: 40px;
+	height: 60px;
+	width: 60px;
 }
 a .fab {
   line-height:90px;
@@ -153,4 +153,22 @@ a:hover::before{
   top:-10%;
   left:-10%;
 }
+}
+.eye-button-2{
+	position: relative;
+	bottom: 35px;
+	left: 200px;
+}
+.Re-Check-Password{
+position: relative;
+bottom: 20px;
+}
+.eye-button-3{
+	position: relative;
+	left: 200px;
+	bottom: 38px;
+}
+.bct{
+	position: relative;
+	bottom: 30px;
 }

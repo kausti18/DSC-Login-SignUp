@@ -4,6 +4,55 @@ const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
 
+$(document).on('click', '.toggle-password', function() {
+
+    $(this).toggleClass("fa-eye fa-eye-slash");
+
+    var input = $("#pass_log_id");
+    input.attr('type') === 'password' ? input.attr('type','text') : input.attr('type','password')
+});
+
+$(document).on('click', '.toggle-password', function() {
+
+    $(this).toggleClass("fa-eye fa-eye-slash");
+
+    var input = $("#pass_log_id_2");
+    input.attr('type') === 'password' ? input.attr('type','text') : input.attr('type','password')
+});
+
+
+$(document).on('click', '.toggle-password', function() {
+
+    $(this).toggleClass("fa-eye fa-eye-slash");
+
+    var input = $("#pass_log_id_3");
+    input.attr('type') === 'password' ? input.attr('type','text') : input.attr('type','password')
+});
+
+$(document).on('click', '.toggle-password', function() {
+
+    $(this).toggleClass("fa-eye fa-eye-slash");
+
+    var input = $("#pass_log_id_4");
+    input.attr('type') === 'password' ? input.attr('type','text') : input.attr('type','password')
+});
+
+$(document).on('click', '.toggle-password', function() {
+
+    $(this).toggleClass("fa-eye fa-eye-slash");
+
+    var input = $("#pass_log_id_5");
+    input.attr('type') === 'password' ? input.attr('type','text') : input.attr('type','password')
+});
+$(document).on('click', '.toggle-password', function() {
+
+    $(this).toggleClass("fa-eye fa-eye-slash");
+
+    var input = $("#pass_log_id_6");
+    input.attr('type') === 'password' ? input.attr('type','text') : input.attr('type','password')
+});
+
+
 signUpButton.addEventListener('click', () => {
 	container.classList.add("right-panel-active");
 });

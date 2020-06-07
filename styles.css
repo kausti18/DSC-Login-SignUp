@@ -228,8 +228,8 @@ input {
 	justify-content: center;
 	align-items: center;
 	margin: 0 5px;
-	height: 40px;
-	width: 40px;
+	height: 60px;
+	width: 60px;
 }
 
 body{
@@ -306,4 +306,22 @@ a:hover::before{
 	height: 20px;
 	width: 200px;
 	border-radius: 15%;
+}
+.eye-button{
+	position: relative;
+	left: 120px;
+	bottom: 38px;
+}
+.Re-Check-Password{
+	position: relative;
+	bottom: 20px;
+	width: 285px;
+}
+.bc{
+	position: relative;
+	bottom: 20px;
+}
+.Sign-Up-Butt{
+	position: relative;
+	bottom: 30px;
 }
