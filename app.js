@@ -1,4 +1,5 @@
 const form = document.getElementById('form');
+const username1 = document.getElementById('username');
 const email = document.getElementById('email');
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
@@ -61,12 +62,20 @@ signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
 
-form.addEventListener('submit', e => {
+form.addEventListener('Login', e => {
 	e.preventDefault();
 
 	checkInputs();
 });
 function checkInputs() {
+
+	const usernameValue = username.value.trim();
+	if(usernameValue === '') {
+		setErrorFor(username, 'Username cannot be blank');
+	} else {
+		setSuccessFor(username);
+	}
+
 	const emailValue = email.value.trim();
 
 	if(emailValue === '') {
@@ -76,6 +85,8 @@ function checkInputs() {
 	} else {
 		setSuccessFor(email);
 	}
+
+
 }
 
 function isEmail(email) {

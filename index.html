@@ -16,7 +16,7 @@
 <div class="computer">
   <div class="container" id="container">
     <div class="form-container sign-up-container">
-      <form action="#">
+      <form class="form-control" action="#">
         <h1>Create Account</h1>
         <div class="social-container">
           <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -24,9 +24,12 @@
           <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <span>or use your email for registration</span>
-        <input type="text" placeholder="Name" required/>
+        <input type="text" placeholder="Userame"required/>
+        <small>Error message</small>
         <input type="email" placeholder="Email" required />
+        <small>Error message</small>
         <input type="password" placeholder="Password" id="pass_log_id_2" name="pass" value="" required/>
+        <small>Error message</small>
         <div class="eye-button"><span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span></div>
         <div class="Re-Check-Password">
           <input type="password" placeholder="Confirm Password" id="pass_log_id_5" name="pass" value="" required/>
@@ -36,7 +39,7 @@
       </form>
     </div>
     <div class="form-container sign-in-container">
-      <form action="#">
+      <form id="form" class="form-control" action="#" onsubmit="return checkInputs()">
         <h1>Login</h1>
         <div class="social-container">
           <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -44,9 +47,12 @@
           <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <span>or use your account</span>
-        <input type="text" placeholder="Username" required/>
-        <input type="email" placeholder="Email" required/>
-        <input type="password" placeholder="Password" id="pass_log_id" name="pass" value="" required/>
+        <input type="text" placeholder="Username" id="username"/>
+        <small>Error message</small>
+        <input type="email" placeholder="Email" id="email" />
+        <small>Error message</small>
+        <input type="password" placeholder="Password" id="pass_log_id" name="pass" value=""/>
+        <small>Error message</small>
         <div class="eye-button"><span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span></div>
         <div class="bc"><a class="forgotPassword" href="#">Forgot your password?</a>
         <button>Login</button></div>
@@ -81,10 +87,13 @@
         </div>
         <div class="login-details">
           <span>or use your account</span>
-          <input type="email" placeholder="Username" required/>
+          <input type="text" placeholder="Username" required/>
+          <small>Error message</small>
           <input type="email" placeholder="Email" required/>
-          <input  type="password" placeholder="Password" id="pass_log_id_3" name="pass" value="" required/>
-          <div class="eye-button-2"><span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span></div>
+          <small>Error message</small>
+        <div><input  type="password" placeholder="Password" id="pass_log_id_3" name="pass" value="" required/>
+          <small>Error message</small>
+          <div class="eye-button-2"><span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span></div></div>
           <div class="forgotPassword"><a class="forgot-Password" href="#">Forgot your password?</a></div>
           <button>Login</button>
           <p>New Here? <a class="clickhere" href="signUp.html">Click</a>here to register yourself!</p>

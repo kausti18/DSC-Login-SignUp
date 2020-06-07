@@ -325,3 +325,14 @@ a:hover::before{
 	position: relative;
 	bottom: 30px;
 }
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
